@@ -45,6 +45,7 @@ exports.handleMessage = function(hook_name, context, callback){
       data: { 
         type: "CUSTOM",
         payload: {
+          authorId: message.authorId,
           action: "requestSTOP",
           padId: message.padId
         }
@@ -59,6 +60,7 @@ exports.handleMessage = function(hook_name, context, callback){
       data: {
         type: "CUSTOM",
         payload: {
+          authorId: message.authorId,
           action: "requestCONTINUE",
           padId: message.padId
         }

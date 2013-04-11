@@ -26,7 +26,7 @@ var stop_writing = {
   * Send a request to negotiate stop_writing to a target client through the server.. 
   *****/
   sendRequest: function(isHiding){
-    var myAuthorId = pad.getUserId();
+    var authorId = pad.getUserId();
     var padId = pad.getPadId();
     if ( $('#stopWriting').text() == "Stop writing" ){
       var isSTOP = false;
@@ -42,14 +42,14 @@ var stop_writing = {
         type : 'stop_writing',
         action : 'requestSTOP',
         padId : padId,
-        myAuthorId : myAuthorId
+        authorId : authorId
       }
     }else{
       var message = {
         type : 'stop_writing',
         action : 'requestCONTINUE',
         padId : padId,
-        myAuthorId : myAuthorId
+        authorId : authorId
       }
     }
     pad.collabClient.sendMessage(message);  // Send the request through the server to create a tunnel to the client

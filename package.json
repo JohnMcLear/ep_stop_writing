@@ -2,7 +2,8 @@
   "name": "ep_stop_writing",
   "version": "0.0.1",
   "keywords": [
-    "stop", "writing"
+    "stop",
+    "writing"
   ],
   "description": "Tell pad users to stop writing",
   "contributors": [
@@ -19,5 +20,13 @@
   "dependencies": {},
   "engines": {
     "node": "*"
-  }
+  },
+  "readme": "# ep_stop_writing\n\nPad authors can send a message to all other pad editors to stop them writing.\n\n## How to use\n\n* Click the \"Stop Writing\" icon in the editbar, this will pop up a \"Stop Writing\" screen on other authors browsers\n\n## Set as disabled by default\n\n1. Open `settings.json`\n2. Append:\n   `\"ep_stop_writing\" : {\n      \"disabled_by_default\" : true\n    }\n   `\n\n##Todo\n* Only allow pad creator or so to be able to see the \"Stop writing\" button\n* Fancy UI\n* Allow string replacements for Stop writing and continue writing button\n\n",
+  "readmeFilename": "README.md",
+  "_id": "ep_stop_writing@0.0.1",
+  "dist": {
+    "shasum": "f067c1c3b9e53a98fe5c49408474688ab6cd245c"
+  },
+  "_from": "ep_stop_writing@",
+  "_resolved": "https://registry.npmjs.org/ep_stop_writing/-/ep_stop_writing-0.0.1.tgz"
 }
