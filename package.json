@@ -1,0 +1,23 @@
+{
+  "name": "ep_stop_writing",
+  "version": "1.0.1",
+  "keywords": [
+    "stop", "writing"
+  ],
+  "description": "Tell pad users to stop writing",
+  "contributors": [
+    {
+      "name": "John McLear",
+      "email": "john@mclear.co.uk",
+      "url": "http://mclear.co.uk"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/johnmclear/ep_stop_writing.git"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
